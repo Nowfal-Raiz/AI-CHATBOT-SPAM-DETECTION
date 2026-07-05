@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --var-primary-color: #2888E8FF;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 1.6rem;
+    letter-spacing: 0.08rem;
+}
+
+button
+ {
+    border: .1rem solid #fff;
+    outline: none;
+    padding: .6rem 1.2rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.reg-head {
+    height: 10vh;
+     
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: rgba(4, 4, 4, 0.379);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.container {
+    height: 10vh;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: none; 
+}
+
+.logo a {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    background-color:none;
+    gap: 2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+li>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero-section .container {
+    height: inherit;
+}
+
+.hero-content {
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content p {
+    text-transform: uppercase;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+}
+
+.hero-content button {
+    margin-top: 2rem;
+    background-color: #cccccc53;
+    border: none;
+    padding: 1rem 2rem;
+}
+
+main {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pexels-pixabay-316093.jpg");
+}
+.registration,
+.login {
+    min-height: 30rem;
+    min-width: 40vw;
+    background-color: transparent;
+}
+
+.grid-two--column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-text {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 3rem 2rem;
+}
+
+.registration .form-text {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login .form-text {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url("img2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-text p {
+    width: 30ch;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.form-text button {
+    background-color: #fff;
+    color: #000;
+}
+
+.form-text button:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.registration-form,
+.login-form {
+    width: 100%;
+    min-height: 45vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registration-form p,
+.login-form p {
+    margin: 1rem 0 .7rem 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.4rem;
+    margin: 1rem 0 .6rem 0;
+}
+
+.bx {
+    color: var(--var-primary-color);
+    font-size: 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 30%;
+    border: 0.1rem solid #ccc;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 20rem;
+    padding: .5rem;
+    margin: .7rem 0;
+    border: none;
+    background-color: lightgray;
+    letter-spacing: .06rem;
+}
+
+input[type="submit"] {
+    margin-top: 1rem;
+    max-width: 20rem;
+    background-color: var(--var-primary-color);
+    color: #fff;
+}
+
+.registration:not(.login-display) {
+    display: none;
+}
+
+.login-display .registration {
+    display: block;
+}
+
+.login-display .login {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-two--column {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .reg-head main {
+        padding-top: 10vh;
+    }
+
+    .reg-head .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .reg-head .container .logo {
+        padding-top: 2rem;
+    }
+
+    .registration,
+    .login {
+        min-width: 90vw;
+    }
+
+    .form-text {
+        order: 1;
+    }
+
+    .registration,
+    .login {
+        order: 0;
+    }
+
+    .form-text p {
+        width: 25ch;
+    }
+}
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
